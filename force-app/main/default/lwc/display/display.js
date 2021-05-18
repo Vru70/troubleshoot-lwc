@@ -1,3 +1,11 @@
+/**
+ * @author            : Vrushabh Uprikar
+ * @last modified on  : 05-18-2021
+ * @last modified by  : Vrushabh Uprikar
+ * Modifications Log 
+ * Ver   Date         Author             Modification
+ * 1.0   05-18-2021   Vrushabh Uprikar   Initial Version
+**/
 import { LightningElement } from 'lwc';
 
 export default class Display extends LightningElement {
@@ -12,7 +20,7 @@ export default class Display extends LightningElement {
   }
   
   handleAugmentorChange(event) {
-    this.augmentor = event.target.value;
+    this.augmentor = parseInt(event.target.value);
   }
 
   handleIncrement(event) {
